@@ -1,4 +1,4 @@
-/* Base Styles */
+/* style.css */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
@@ -9,6 +9,8 @@
     --text-light: #7f8c8d;
     --white: #fff;
     --gray: #95a5a6;
+    --snowflake-blue: #29b5e8;
+    --python-yellow: #ffd343;
 }
 
 * {
@@ -273,12 +275,24 @@ header .container {
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tool-item:hover {
+    transform: translateY(-5px);
 }
 
 .tool-item i {
     font-size: 1.5rem;
     margin-right: 10px;
-    color: var(--secondary-color);
+}
+
+.tool-item i.fa-database {
+    color: var(--snowflake-blue);
+}
+
+.tool-item i.fab.fa-python {
+    color: var(--python-yellow);
 }
 
 /* Experience Section */
@@ -346,8 +360,8 @@ header .container {
 
 .timeline-content h4 {
     margin-bottom: 15px;
-    color: var(--secondary-color);
-    font-weight: 500;
+    color: var(--snowflake-blue);
+    font-weight: 600;
 }
 
 .timeline-content ul {
@@ -408,69 +422,6 @@ header .container {
     margin-bottom: 15px;
     color: var(--text-light);
     font-style: italic;
-}
-
-/* Projects Section */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-image {
-    height: 200px;
-    background: var(--gray);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-}
-
-.project-content {
-    padding: 25px;
-}
-
-.project-content h3 {
-    margin-bottom: 10px;
-    color: var(--primary-color);
-}
-
-.project-content p {
-    margin-bottom: 15px;
-    color: var(--text-light);
-}
-
-.project-links {
-    display: flex;
-    gap: 15px;
-}
-
-.project-links a {
-    display: flex;
-    align-items: center;
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.project-links a i {
-    margin-right: 5px;
-}
-
-.project-links a:hover {
-    color: var(--accent-color);
 }
 
 /* Contact Section */
