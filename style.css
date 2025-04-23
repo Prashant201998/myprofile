@@ -922,7 +922,7 @@ input:checked + .slider:before {
 }
 
 /* CONTACT FORM */
-.contact-form {
+contact-form {
   background: var(--card-bg);
   padding: 40px;
   border-radius: var(--border-radius);
@@ -1018,7 +1018,7 @@ textarea.form-control {
   margin-top: 20px;
   text-align: center;
   display: none;
-}
+} 
 
 .form-success {
   background: rgba(56, 189, 248, 0.1);
@@ -1037,6 +1037,7 @@ textarea.form-control {
   border: 1px solid #ef4444;
   color: #ef4444;
 }
+
 
 /* FOOTER */
 footer {
@@ -1073,7 +1074,7 @@ footer p {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 999;
+  z-index: 99;
   box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
 }
 
@@ -1247,4 +1248,28 @@ footer p {
   .timeline-content h3 {
     font-size: 1.3rem;
   }
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+  margin-top: 12px;
 }
